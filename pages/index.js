@@ -32,14 +32,14 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Hi, I'm CistusF</title>
+        <title>Hi, I{"'"}m CistusF</title>
         <meta name="description" content="Hello, I'm CistusF" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.container}>
         <main className={styles.main}>
           <h1 className={styles.fadeIn}>Hi</h1>
-          <h1 className={styles.slideIn}>I'm CistusF</h1>
+          <h1 className={styles.slideIn}>I{"'"}m CistusF</h1>
         </main>
         <main className={styles.main}>
           <h1 className={styles.slideIn}>Animation Test</h1>
