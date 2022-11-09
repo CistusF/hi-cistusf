@@ -1,9 +1,17 @@
+@font-face {
+  font-family: "cafe24";
+  src: url("/Cafe24Danjunghae.ttf");
+}
+
+@font-face {
+  font-family: "hbios";
+  src: url("/HBIOS-SYS.ttf");
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -19,6 +27,7 @@ a {
   html {
     color-scheme: dark;
   }
+
   body {
     color: white;
     background: black;
