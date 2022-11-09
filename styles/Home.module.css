@@ -2,8 +2,12 @@
   padding: 0 2rem;
 }
 
+.main:first {
+  background-image: url();
+}
+
 .main {
-  min-height: 100vh;
+  min-height: calc(100vh + 2px);
   padding: 4rem 0;
   flex: 1;
   display: flex;
@@ -11,6 +15,22 @@
   justify-content: center;
   align-items: center;
   font-family: "hbios";
+  border-bottom: 1px solid #fff;
+}
+
+.tech {
+  display: flex;
+  justify-content:space-around;
+  text-align: none;
+  width: 80%;
+}
+
+.techItem {
+  flex-grow: 1;
+}
+
+.stacks {
+  font-size: 25px;
 }
 
 .fadeIn {
