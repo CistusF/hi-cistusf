@@ -2,10 +2,6 @@
   padding: 0 2rem;
 }
 
-.main:first {
-  background-image: url();
-}
-
 .main {
   min-height: calc(100vh + 2px);
   padding: 4rem 0;
@@ -20,13 +16,12 @@
 
 .tech {
   display: flex;
-  justify-content:space-around;
-  text-align: none;
-  width: 80%;
+  justify-content: space-around;
+  width: 70%;
 }
 
-.techItem {
-  flex-grow: 1;
+.tech>h1 {
+  text-align: center;
 }
 
 .stacks {
