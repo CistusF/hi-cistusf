@@ -2,6 +2,11 @@
   padding: 0 2rem;
 }
 
+.main:first-child {
+  opacity: 0;
+  background-image: url("/background.mp4");
+}
+
 .main {
   min-height: calc(100vh + 2px);
   padding: 4rem 0;

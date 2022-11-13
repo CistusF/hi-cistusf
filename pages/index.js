@@ -37,8 +37,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.container}>
-        <div className={styles.main}>
-          <h2 className={styles.fadeIn}>Who am i?</h2>
+        <div className={`${styles.main} ${styles.fadeIn}`}>
+          <h2>Who am i?</h2>
           <h1 className={styles.slideIn}>I&apos;m CistusF</h1>
         </div>
         <div className={styles.main}>

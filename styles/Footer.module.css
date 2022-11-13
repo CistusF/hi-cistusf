@@ -13,11 +13,41 @@
     justify-content: center;
     align-items: center;
     flex-grow: 1;
+    width: 30px !important;
 }
 
 .logo {
     height: 1em;
     margin-left: 0.5rem;
+}
+
+.infos {
+    display: flex;
+    width: 100%;
+    font-family: "cafe24";
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+.infos>div {
+    width: 20%;
+}
+
+.infos>div>p {
+    font-size: 22px;
+}
+
+.infos>div>a:first-child {
+    margin-top: 60px;
+}
+
+.infos>div>li {
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.infos>div>li>a {
+    text-decoration: underline;
 }
 
 @media (prefers-color-scheme: dark) {

@@ -1,0 +1,41 @@
+.container {
+  padding: 0 2rem;
+}
+
+.main {
+  min-height: calc(100vh + 2px);
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "hbios";
+  margin: 0 auto;
+  width: 230px;
+}
+
+.slideIn {
+  -webkit-clip-path: polygon(0 0, 100% 0, 0 0, 100% 100%);
+  clip-path: polygon(0 0, 0 100%, 0 0, 0 0);
+  opacity: 1;
+  transition: clip-path 2s;
+}
+
+.cafe {
+  font-family: "cafe";
+}
+
+.hbios {
+  font-family: "hbios";
+}
+
+.License {
+  color: rgb(150, 178, 244);
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
