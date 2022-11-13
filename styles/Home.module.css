@@ -19,6 +19,10 @@
   border-bottom: 1px solid #fff;
 }
 
+.techItem:first-child {
+  display: none;
+}
+
 .tech {
   display: flex;
   justify-content: space-around;
@@ -48,5 +52,22 @@
 @media (max-width: 600px) {
   .container {
     padding: 0;
+  }
+
+  .tech {
+    width: auto;
+    flex-direction: column;
+  }
+
+  .stacks {
+    margin-top: 50px;
+  }
+
+  .techItem:first-child {
+    display: block;
+  }
+
+  .techItem:last-child {
+    display: none;
   }
 }

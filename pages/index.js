@@ -43,8 +43,8 @@ export default function Home() {
         </div>
         <div className={styles.main}>
           <div className={styles.tech}>
-            <h1 className={`${styles.fadeIn} ${styles.techItem}`}>I can use</h1>
-            <div className={`${styles.slideIn} ${styles.techItem} ${styles.stacks}`}>
+            <h1 className={styles.fadeIn}>I can use</h1>
+            <div className={`${styles.slideIn} ${styles.stacks}`}>
               <li>HTML</li>
               <li>CSS</li>
               <li>C/C++</li>
@@ -66,6 +66,7 @@ export default function Home() {
         </div>
         <div className={styles.main}>
           <div className={styles.tech}>
+            <h1 className={`${styles.fadeIn} ${styles.techItem}`}>Technology stack</h1>
             <div className={`${styles.slideIn} ${styles.techItem} ${styles.stacks}`}>
               <li>Database</li>
               <ul>
