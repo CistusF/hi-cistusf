@@ -35,6 +35,8 @@ export default function License() {
                         <li><a href='https://hbios.quiple.dev' className={styles.hbios}>HBIOS-SYS</a> - <a className={styles.License} href='https://creativecommons.org/licenses/by-sa/4.0/deed.ko'>[License]</a></li>
                         <h2>Framework</h2>
                         <li><a href='https://github.com/vercel/next.js/tree/canary/packages/create-next-app'>create-next-app</a> - <a className={styles.License} href="https://github.com/vercel/next.js/blob/canary/license.md">[License]</a></li>
+                        <h2>Image/Videos</h2>
+                        <li><a href="https://www.pexels.com/video/blurry-screen-853919/">Pexels</a> - <a className={styles.License} href="https://www.pexels.com/creative-commons-images/">[License]</a></li>
                     </div>
                 </div>
             </div>
