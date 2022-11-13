@@ -11,8 +11,8 @@ export default function Home() {
         let elements = document.querySelectorAll("." + i[0]);
         elements.forEach(j => i[1].observe(j));
       });
-
     }
+
     var fadeIn = new IntersectionObserver((elements) => {
       const element = elements.find(i => i.isIntersecting);
       if (element?.target)
