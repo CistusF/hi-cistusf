@@ -4,7 +4,6 @@ import Footer from '../modules/footer';
 import { useEffect } from 'react';
 
 export default function Home() {
-
   useEffect(() => {
     const addObserve = (datas) => {
       datas.forEach(i => {
@@ -97,6 +96,35 @@ export default function Home() {
               </ul>
             </div>
             <h1 className={`${styles.fadeIn} ${styles.techItem}`}>Technology stack</h1>
+          </div>
+        </div>
+        <div className={styles.main}>
+          <h1 className={styles.fadeIn}>My Projects</h1>
+          <div className={`${styles.cards} ${styles.slideIn}`}>
+            {[{
+              title: "hi-cistusf",
+              description: "Introduce my self"
+            },
+            {
+              title: "typescript-discord-bot",
+              description: "Easy to create Discord bot with Typescript"
+            },
+            {
+              title: "discord.js_mongo",
+              description: "Easy to connect Discord bot to MongoDB"
+            },
+            {
+              title: "discord.js_mongo",
+              description: "Easy to connect Discord bot to MongoDB"
+            }
+            ].map(({ title, description }) => {
+              return <div itemID={title} className={styles.card}>
+                <p className={styles.title}>{title}</p>
+                <p className={styles.description}>{description}</p>
+                <a href={`https://github.com/CistusF/${title}`}><div className={styles.button}>Github</div></a>
+              </div>
+            })
+            }
           </div>
         </div>
       </div>
