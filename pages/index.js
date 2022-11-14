@@ -118,7 +118,7 @@ export default function Home() {
               description: "Easy to connect Discord bot to MongoDB"
             }
             ].map(({ title, description }) => {
-              return <div itemID={title} className={styles.card}>
+              return <div key={title} className={styles.card}>
                 <p className={styles.title}>{title}</p>
                 <p className={styles.description}>{description}</p>
                 <a href={`https://github.com/CistusF/${title}`}><div className={styles.button}>Github</div></a>
