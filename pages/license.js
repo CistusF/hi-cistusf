@@ -30,6 +30,8 @@ export default function License() {
                 <div className={styles.main}>
                     <h1>Licenses</h1>
                     <div className={styles.slideIn}>
+                        <h1>My Github</h1>
+                        <h3><a className={styles.License} href='https://github.com/CistusF/hi-cistusf'>[hi-cistusf]</a></h3>
                         <h2>Fonts</h2>
                         <li><a href='https://fonts.cafe24.com' className={styles.cafe}>카페24단정해</a> - <a className={styles.License} href='/License.txt'>[License]</a></li>
                         <li><a href='https://hbios.quiple.dev' className={styles.hbios}>HBIOS-SYS</a> - <a className={styles.License} href='https://creativecommons.org/licenses/by-sa/4.0/deed.ko'>[License]</a></li>

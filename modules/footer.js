@@ -22,7 +22,7 @@ export default function Footer() {
                         Socials
                     </p>
                     <li>
-                        <a href='https://github.com/CistusF/hi-cistusf'>Github</a>
+                        <a href='https://github.com/CistusF'>Github</a>
                     </li>
                     <li>
                         <a href='https://www.youtube.com/@cistus'>Youtube</a>
