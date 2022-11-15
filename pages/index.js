@@ -114,8 +114,8 @@ export default function Home() {
               description: "Easy to connect Discord bot to MongoDB"
             },
             {
-              title: "discord.js_mongo",
-              description: "Easy to connect Discord bot to MongoDB"
+              title: "WBOT",
+              description: "Open source discord chat bot"
             }
             ].map(({ title, description }) => {
               return <div key={title} className={styles.card}>
