@@ -2,6 +2,7 @@ import Head from 'next/head';
 import styles from '../styles/License.module.css';
 import Footer from '../modules/footer';
 import { useEffect } from 'react';
+import Image from 'next/image';
 
 export default function License() {
 
@@ -40,6 +41,10 @@ export default function License() {
                         <h2>Image/Videos</h2>
                         <li><a href="https://www.pexels.com/video/blurry-screen-853919/">Pexels</a> - <a className={styles.License} href="https://www.pexels.com/creative-commons-images/">[License]</a></li>
                     </div>
+                    <h2 style={{ marginTop: "40px",textAlign: "center" }}>buy me a coffee</h2>
+                    <Image src="/bmc_qr.png" style={
+                        { margin: "10px auto" }
+                    } width={130} height={130} alt="bmc" />
                 </div>
             </div>
             <Footer />
