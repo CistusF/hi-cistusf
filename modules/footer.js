@@ -41,6 +41,9 @@ export default function Footer() {
                     <li>
                         <a href='/license'>License</a>
                     </li>
+                    <li>
+                        <a href='https://wbot.vercel.app/'>WBOT</a>
+                    </li>
                 </div>
             </footer>
         </>
