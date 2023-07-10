@@ -4,43 +4,9 @@ import Nav from 'modules/components/Nav';
 import Card from 'modules/components/Card';
 import Footer from 'modules/components/Footer';
 import Link from 'next/link';
+import About from 'modules/components/About';
+import { about, projects } from 'modules/data/page';
 
-const about = [
-  {
-    title: "Nick/Name",
-    description: "CistusF/Sung Min Woo"
-  },
-  {
-    title: "Where",
-    description: "I live in Gunsan, South Korea, Currently attending Jeonju University."
-  },
-  {
-    title: "What",
-    description: "Being a Javascript developer with hard work and passion for create new things. "
-  },
-  {
-    title: "Position",
-    description: "People call me, PM, PL, TA, DA, Fullstack Developer"
-  }
-];
-
-const projects = [
-  {
-    title: "My-SNS",
-    description: "Sharing your own sns to easy.",
-    percent: 100
-  },
-  {
-    title: "Equal",
-    description: "Study with random word quiz!",
-    percent: 40
-  },
-  {
-    title: "Devist",
-    description: "Project with peoples",
-    percent: 20
-  }
-];
 
 export default function Home() {
   return (
@@ -69,10 +35,7 @@ export default function Home() {
           <div className={styles.content}>
             {
               about.map(({ title, description }) => {
-                return <div className={styles.info} key={title}>
-                  <p className={styles.title}>{title}</p>
-                  <p className={styles.description}>{description}</p>
-                </div>
+                return <About title={title} description={description} key={title} />
               })
             }
           </div>
@@ -81,7 +44,7 @@ export default function Home() {
       <div className={styles.projects} id="projects">
         <span>Projects</span>
         {
-          projects.map(({ title, description, percent }) => {
+          projects  .map(({ title, description, percent }) => {
             return <Card key={title} title={title} description={description} processing={percent} />
           })
         }

@@ -93,21 +93,6 @@
   justify-content: space-evenly;
 }
 
-.about > .contents > .content > .info {
-  width: 480px;
-  padding: 20px 0;
-}
-
-.about > .contents > .content > .info > .title {
-  font-size: 30px;
-  color: #FFFFA1;
-}
-
-.about > .contents > .content > .info > .description {
-  font-size: 20px;
-  color: #fff;
-}
-
 .projects {
   background-color: #1D1F21;
   height: 980px;

@@ -1,0 +1,16 @@
+.info {
+    width: 480px;
+    padding: 20px 0;
+    transform: translate(40vw, 0);
+    transition: transform 1500ms;
+}
+
+.info>.title {
+    font-size: 30px;
+    color: #FFFFA1;
+}
+
+.info>.description {
+    font-size: 20px;
+    color: #fff;
+}

@@ -1,10 +1,23 @@
+'use client'
+
 import Image from 'next/image';
 import styles from './Card.module.css';
-import Link from 'next/link';
+import { useEffect, useRef } from 'react';
+export default function Card({ title, description, processing }: { title: string, description: string, processing: number }) {
+    const card = useRef<HTMLDivElement>(null);
 
-export default function Nav({ title, description, processing }: { title: string, description: string, processing: number }) {
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            const target = entries[0];
+            if (card.current && target.intersectionRatio > 0) {
+                card.current.style.transform = 'translate(0, 0)';
+            };
+        });
+        observer.observe(card.current!);
+    }, []);
+
     return (
-        <div className={styles.card}>
+        <div ref={card} className={styles.card}>
             <div className={styles.line} />
             <Image src={"/" + title + ".svg"} alt={title} width={80} height={80} />
             <div className={styles.content}>

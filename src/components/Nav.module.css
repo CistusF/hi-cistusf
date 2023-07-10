@@ -18,8 +18,29 @@
     flex-grow: 2;
 }
 
+.nav>.items>a {
+    transition: font-size 600ms;
+}
+
+.nav>.items>a:hover {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
 .nav>.items>a>img {
-    border-radius: 50px;
+    border-radius: 30px;
+    transition: width 800ms, height 800ms, border-radius 600ms;
+}
+
+.nav>.items>a>img {
+    border-radius: 30px;
+    transition: width 800ms, height 800ms, border-radius 600ms;
+}
+
+.nav>.items>a>img:hover {
+    width: 65px;
+    height: 65px;
+    border-radius: 10px;
 }
 
 .nav>.divider {
@@ -36,4 +57,13 @@
     display: flex;
     justify-content: space-evenly;
     flex-grow: 1;
+}
+
+.nav>.links>a>img {
+    transition: width 800ms, height 800ms;
+}
+
+.nav>.links>a>img:hover {
+    width: 50px;
+    height: 50px;
 }
