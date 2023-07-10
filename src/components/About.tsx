@@ -5,7 +5,6 @@ import styles from './About.module.css';
 import { useEffect, useRef } from 'react';
 
 export default function About({ title, description }: { title: string, description: string }) {
-
     const info = useRef<HTMLDivElement>(null);
 
     useEffect(() => {

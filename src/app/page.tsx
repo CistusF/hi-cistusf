@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 import styles from './page.module.css';
 import Nav from 'modules/components/Nav';
@@ -6,12 +8,31 @@ import Footer from 'modules/components/Footer';
 import Link from 'next/link';
 import About from 'modules/components/About';
 import { about, projects } from 'modules/data/page';
+import { useEffect, useRef } from 'react';
 
 
 export default function Home() {
+  const header = useRef<HTMLDivElement>(null);
+  const contact = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        new IntersectionObserver((entries) => {
+            const target = entries[0];
+            if (header.current && target.intersectionRatio > 0) {
+              header.current.style.clipPath = 'circle(100%)';
+            };
+        }).observe(header.current!);
+
+        new IntersectionObserver((entries) => {
+            const target = entries[0];
+            if (contact.current && target.intersectionRatio > 0) {
+              contact.current.style.clipPath = 'polygon(0 0, 100% 0, 100% 100%, 0 100%)';
+            };
+        }).observe(contact.current!);
+    }, []);
   return (
     <main className={styles.main}>
-      <div className={styles.header}>
+      <div ref={header} className={styles.header}>
         <div className={styles.content}>
           <p className={styles.title}>Hi, I&apos;m CistusF</p>
           <p className={styles.description}>Find, Mind, Bind, Remind</p>
@@ -44,14 +65,14 @@ export default function Home() {
       <div className={styles.projects} id="projects">
         <span>Projects</span>
         {
-          projects  .map(({ title, description, percent }) => {
+          projects.map(({ title, description, percent }) => {
             return <Card key={title} title={title} description={description} processing={percent} />
           })
         }
       </div>
-      <div className={styles.contact} id="contact">
+      <div ref={contact} className={styles.contact} id="contact">
         <div className={styles.content}>
-          <span>contact</span>
+          <span>Contact</span>
           <p>Feel free to contact me.</p>
         </div>
         <div className={styles.links}>
