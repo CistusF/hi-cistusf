@@ -47,7 +47,7 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.header}>
         <div className={styles.content}>
-          <p className={styles.title}>Hi, I'm CistusF</p>
+          <p className={styles.title}>Hi, I&apos;m CistusF</p>
           <p className={styles.description}>Find, Mind, Bind, Remind</p>
         </div>
         <div className={styles.icon}>
@@ -82,7 +82,7 @@ export default function Home() {
         <span>Projects</span>
         {
           projects.map(({ title, description, percent }) => {
-            return <Card title={title} description={description} processing={percent} />
+            return <Card key={title} title={title} description={description} processing={percent} />
           })
         }
       </div>
