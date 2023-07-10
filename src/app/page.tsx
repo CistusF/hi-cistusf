@@ -38,7 +38,7 @@ const projects = [
   {
     title: "Devist",
     description: "Project with peoples",
-    percent: 100
+    percent: 20
   }
 ];
 
@@ -78,7 +78,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className={styles.projects}>
+      <div className={styles.projects} id="projects">
         <span>Projects</span>
         {
           projects.map(({ title, description, percent }) => {
@@ -86,7 +86,7 @@ export default function Home() {
           })
         }
       </div>
-      <div className={styles.contact}>
+      <div className={styles.contact} id="contact">
         <div className={styles.content}>
           <span>contact</span>
           <p>Feel free to contact me.</p>

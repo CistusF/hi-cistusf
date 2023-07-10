@@ -6,12 +6,14 @@ export default function Nav() {
     return (
         <div className={styles.nav}>
             <div className={styles.items}>
-                <Image src={"/profile.jpeg"} alt="profile" width={50} height={50} />
-                <Link href={"#about"}>About</Link>
-                <Link href={"#projects"}>Projects</Link>
-                <Link href={"#contact"}>Contact</Link>
+                <Link href={"/#"} scroll={false}>
+                    <Image src={"/profile.jpeg"} alt="profile" width={50} height={50} />
+                </Link>
+                <Link href={"/#about"} scroll={false}>About</Link>
+                <Link href={"/#projects"} scroll={false}>Projects</Link>
+                <Link href={"/#contact"} scroll={false}>Contact</Link>
             </div>
-            <div className={styles.divider}/>
+            <div className={styles.divider} />
             <div className={styles.links}>
                 <Link href={"https://github.com/CistusF"}>
                     <Image src={"/github.svg"} alt={"Github"} width={50} height={50} />

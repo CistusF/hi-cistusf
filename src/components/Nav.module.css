@@ -8,6 +8,7 @@
     font-size: 20px;
     top: 0;
     opacity: 0.95;
+    z-index: 100;
 }
 
 .nav>.items {
@@ -17,7 +18,7 @@
     flex-grow: 2;
 }
 
-.nav>.items>img {
+.nav>.items>a>img {
     border-radius: 50px;
 }
 
