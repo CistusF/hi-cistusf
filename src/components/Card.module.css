@@ -1,0 +1,51 @@
+.card {
+    clear: both;
+    float: right;
+    display: flex;
+    align-items: center;
+    width: 700px;
+    height: 140px;
+    background-color: #2C2E30;
+    border-radius: 20px 0 0 20px;
+    margin-top: 90px;
+}
+
+.card:nth-child(2n) {
+    float: left;
+    border-radius: 0 20px 20px 0;
+}
+
+.card > .line {
+    position: absolute;
+    background-color: #FF6600;
+    height: 140px;
+    width: 14px;
+    margin-left: calc(700px - 14px);
+}
+
+.card:nth-child(2n) > .line {
+    margin-left: 0;
+}
+
+.card>img {
+    margin: 2rem;
+}
+
+.card>.content {
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-weight: 300;
+    width: 420px;
+}
+
+.card>.content>.title {
+    font-size: 25px;
+    color: #FF6600;
+}
+
+.card>.content>.description {
+    font-size: 20px;
+    color: #fff;
+}
