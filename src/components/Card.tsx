@@ -9,7 +9,7 @@ export default function Card({ title, description, processing }: { title: string
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
             const target = entries[0];
-            if (card.current && target.intersectionRatio > 0) {
+            if (card.current && target.isIntersecting) {
                 card.current.style.transform = 'translate(0, 0)';
             };
         });

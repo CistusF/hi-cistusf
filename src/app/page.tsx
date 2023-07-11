@@ -18,7 +18,7 @@ export default function Home() {
     useEffect(() => {
         new IntersectionObserver((entries) => {
             const target = entries[0];
-            if (header.current && target.intersectionRatio > 0) {
+            if (header.current && target.isIntersecting) {
               header.current.style.clipPath = 'circle(100%)';
             };
         }).observe(header.current!);

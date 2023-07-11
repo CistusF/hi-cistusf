@@ -14,3 +14,22 @@
     font-size: 20px;
     color: #fff;
 }
+
+
+@media (max-width: 768px) {
+    .info {
+        margin: 0 auto;
+        width: 90%;
+        padding: 10px 0;
+    }
+
+    .info>.title {
+        font-size: 20px;
+        color: #FFFFA1;
+    }
+
+    .info>.description {
+        font-size: 15px;
+        color: #fff;
+    }
+}

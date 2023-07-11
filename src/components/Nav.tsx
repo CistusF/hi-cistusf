@@ -5,12 +5,12 @@ import Link from 'next/link';
 export default function Nav() {
     return (
         <div className={styles.nav}>
+            <Link href={{ pathname: "/" }} replace>
+                <Image src={"/profile.jpeg"} alt={"profile"} width={50} height={50} />
+            </Link>
             <div className={styles.items}>
-                <Link href={{ pathname: "/" }} replace>
-                    <Image src={"/profile.jpeg"} alt={"profile"} width={50} height={50} />
-                </Link>
                 <Link href={{ pathname: "/", hash: 'about' }} replace>
-                    <p>About</p>
+                    About
                 </Link>
                 <Link href={{ pathname: "/", hash: 'projects' }} replace>Projects</Link>
                 <Link href={{ pathname: "/", hash: 'contact' }} replace>Contact</Link>
@@ -24,6 +24,9 @@ export default function Nav() {
                     <Image src={"/My-SNS.svg"} alt={"My-SNS"} width={30} height={30} />
                 </Link>
             </div>
+            <Link href={""}>
+                <Image src={"/MENU.svg"} alt={"menu"} width={30} height={30} />
+            </Link>
         </div>
     )
 };

@@ -10,7 +10,7 @@
   transition: clip-path 2s;
 }
 
-.header > .content {
+.header>.content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,16 +18,16 @@
   line-height: 120px;
 }
 
-.header > .content > .title {
+.header>.content>.title {
   font-size: 80px;
 }
 
-.header > .content > .description {
+.header>.content>.description {
   font-size: 30px;
   color: #E0E0E0;
 }
 
-.header > .icon {
+.header>.icon {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,27 +37,27 @@
   font-weight: lighter;
 }
 
-.header > .icon > svg {
+.header>.icon>svg {
   transition: transform 500ms;
 }
 
-.header > .icon > svg:hover {
+.header>.icon>svg:hover {
   transform: rotateX(180deg);
 }
 
-.header > .icon > svg > .cursor {
+.header>.icon>svg>.cursor {
   animation: cursorPointing 1200ms infinite alternate;
 }
 
-.main > div:nth-child(n+3) {
+.main>div:nth-child(n+3) {
   padding: 4rem 3rem;
 }
 
-.main > div:last-child {
+.main>div:last-child {
   padding: 0;
 }
 
-.main > div:nth-child(n+3) > span {
+.main>div:nth-child(n+3)>span {
   color: #FF983F;
   font-size: 60px;
   font-weight: bold;
@@ -65,11 +65,12 @@
   margin: 2rem 0;
   float: right;
 }
-.main > div:nth-child(n+3) > div {
+
+.main>div:nth-child(n+3)>div {
   clear: both;
 }
 
-.main > div:nth-child(2n+3) > span {
+.main>div:nth-child(2n+3)>span {
   float: left;
 }
 
@@ -78,18 +79,18 @@
   height: 880px;
 }
 
-.about > .contents {
+.about>.contents {
   height: 600px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 
-.about > .contents > img {
+.about>.contents>img {
   border-radius: 50px;
 }
 
-.about > .contents > .content {
+.about>.contents>.content {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -111,7 +112,7 @@
   transition: clip-path 2500ms;
 }
 
-.contact > .content {
+.contact>.content {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -121,17 +122,17 @@
   color: #fff;
 }
 
-.contact > .content > span {
+.contact>.content>span {
   font-weight: bold;
   font-style: italic;
   font-size: 60px;
 }
 
-.contact > .content > p {
+.contact>.content>p {
   font-size: 30px;
 }
 
-.contact > .links {
+.contact>.links {
   width: 200px;
   display: flex;
   flex-grow: 2;
@@ -140,11 +141,11 @@
   margin: 0 auto;
 }
 
-.contact > .links > a > img {
+.contact>.links>a>img {
   transition: transform 500ms, width 800ms, height 800ms;
 }
 
-.contact > .links > a > img:hover {
+.contact>.links>a>img:hover {
   width: 80px;
   height: 80px;
   transform: rotate(360deg);
@@ -157,5 +158,75 @@
 
   100% {
     opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column-reverse;
+    min-height: 600px;
+  }
+
+  .header>.content>.title {
+    font-size: 30px;
+  }
+
+  .header>.content>.description {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .header>.icon {
+    font-size: 35px;
+    line-height: 80px;
+    align-items: center;
+  }
+
+  .header>.icon>svg {
+    width: 120px;
+    height: 120px;
+  }
+
+  .main>div:nth-child(n+3) {
+    padding: 4rem 0;
+  }
+
+  .main>div:nth-child(n+3)>span {
+    display: flex;
+    justify-content: center;
+    margin: -40px 0 0 0;
+    font-size: 30px;
+    float: none;
+  }
+
+  .about {
+    height: 680px;
+  }
+
+  .about>.contents {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about>.contents>img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+  }
+
+  .projects {
+    height: 540px;
+  }
+
+  .contact {
+    height: 380px;
+  }
+
+  .contact>.content>span {
+    font-size: 30px;
+  }
+
+  .contact>.content>p {
+    font-size: 20px;
   }
 }
