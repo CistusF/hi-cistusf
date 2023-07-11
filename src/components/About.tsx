@@ -10,7 +10,7 @@ export default function About({ title, description }: { title: string, descripti
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
             const target = entries[0];
-            if (info.current && target.intersectionRatio > 0) {
+            if (info.current && target.isIntersecting) {
                 info.current.style.transform = 'translate(0, 0)';
             };
         });
