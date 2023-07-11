@@ -13,7 +13,7 @@ export const about = [
     },
     {
         title: "Position",
-        description: "People call me, PM, PL, TA, DA, Fullstack Developer"
+        description: "People call me PM, PL, TA, DA, Fullstack Developer"
     }
 ];
 
