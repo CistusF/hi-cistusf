@@ -12,6 +12,10 @@
     z-index: 100;
 }
 
+.nav>a:last-child {
+    display: none;
+}
+
 .nav>a:first-child>img {
     border-radius: 30px;
     transition: width 800ms, height 800ms, border-radius 600ms;
@@ -79,5 +83,9 @@
 
     .nav>.links {
         display: none;
+    }
+
+    .nav>a:last-child {
+        display: block;
     }
 }
