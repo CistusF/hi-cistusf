@@ -1,8 +1,12 @@
+"use client";
+
 import Image from 'next/image';
 import styles from './Nav.module.css';
 import Link from 'next/link';
+import { useState } from 'react';
 
 export default function Nav() {
+    const [open, useOpen] = useState(false);
     return (
         <div className={styles.nav}>
             <Link href={{ pathname: "/" }} replace>
@@ -24,9 +28,34 @@ export default function Nav() {
                     <Image src={"/My-SNS.svg"} alt={"My-SNS"} width={30} height={30} />
                 </Link>
             </div>
-            <Link href={""}>
-                <Image src={"/MENU.svg"} alt={"menu"} width={30} height={30} />
-            </Link>
+            <Image onClick={() => useOpen(true)} src={"/MENU.svg"} alt={"menu"} width={30} height={30} />
+            <div style={
+                open ? {
+                    transform: "translate(0, 0)"
+                } : {
+                    transform: "translate(100%, 0)"
+                }
+            } className={styles.sideBar} onClick={() => useOpen(false)}>
+                <div className={styles.sideLine}></div>
+                <Image src={"/Cross.svg"} alt={"Cross"} width={30} height={30} />
+                <span>Menus</span>
+                <div className={styles.links}>
+                    <Link href={{ pathname: "/", hash: 'about' }} replace>
+                        About
+                    </Link>
+                    <Link href={{ pathname: "/", hash: 'projects' }} replace>Projects</Link>
+                    <Link href={{ pathname: "/", hash: 'contact' }} replace>Contact</Link>
+                </div>
+                <span>Links</span>
+                <div className={styles.links}>
+                    <Link href={"https://github.com/CistusF"}>
+                        Github
+                    </Link>
+                    <Link href={"https://CistusF.github.io/My-SNS"}>
+                        My-SNS
+                    </Link>
+                </div>
+            </div>
         </div>
     )
 };

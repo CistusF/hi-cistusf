@@ -21,7 +21,7 @@
         margin: 0 auto;
         width: 90%;
         padding: 10px 0;
-        transform: translate(90vw, 0);
+        transform: translate(90%, 0);
     }
 
     .info>.title {
