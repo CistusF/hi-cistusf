@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 
 export default function Nav() {
-    const [open, useOpen] = useState(false);
+    const [open, setOpen] = useState(false);
     return (
         <div className={styles.nav}>
             <Link href={{ pathname: "/" }} replace>
@@ -28,14 +28,14 @@ export default function Nav() {
                     <Image src={"/My-SNS.svg"} alt={"My-SNS"} width={30} height={30} />
                 </Link>
             </div>
-            <Image onClick={() => useOpen(true)} src={"/MENU.svg"} alt={"menu"} width={30} height={30} />
+            <Image onClick={() => setOpen(true)} src={"/MENU.svg"} alt={"menu"} width={30} height={30} />
             <div style={
                 open ? {
                     transform: "translate(0, 0)"
                 } : {
                     transform: "translate(100%, 0)"
                 }
-            } className={styles.sideBar} onClick={() => useOpen(false)}>
+            } className={styles.sideBar} onClick={() => setOpen(false)}>
                 <div className={styles.sideLine}></div>
                 <Image src={"/Cross.svg"} alt={"Cross"} width={30} height={30} />
                 <span>Menus</span>
