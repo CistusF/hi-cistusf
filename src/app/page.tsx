@@ -62,6 +62,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      {/*
       <div className={styles.projects} id="projects">
         <span>Projects</span>
         {
@@ -70,6 +71,7 @@ export default function Home() {
           })
         }
       </div>
+      */}
       <div ref={contact} className={styles.contact} id="contact">
         <div className={styles.content}>
           <span>Contact</span>
