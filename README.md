@@ -1,4 +1,10 @@
 # Hi, I',m CistusF  
+
+## Todo
+[] Update version
+[] make projects for add page
+
+
 ## Framework
 [![Nextjs Badge](https://img.shields.io/badge/-nextjs-black?style=flat-square&logo=nextdotjs)](http://nextjs.org)
 [![Figma Badge](https://img.shields.io/badge/-figma-black?style=flat-square&logo=figma)](https://figma.com)
