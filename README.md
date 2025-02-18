@@ -1,8 +1,8 @@
 # Hi, I',m CistusF  
 
 ## Todo
-[] Update version
-[] make projects for add page
+- [ ] Update version
+- [ ] make projects for add page
 
 
 ## Framework
